@@ -1,0 +1,5 @@
+Template: rockpi-penta/reboot-system
+Type: boolean
+Default: false
+Description: Do you want to reboot the system now?
+ Installation will take effect after reboot.

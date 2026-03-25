@@ -1,0 +1,13 @@
+[Unit]
+Description=Rockpi SATA Hat
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rockpi-penta/rockpi-penta
+KillSignal=SIGINT
+EnvironmentFile=/etc/rockpi-penta.env
+Restart=on-failure
+WorkingDirectory=/usr/bin/rockpi-penta
+
+[Install]
+WantedBy=multi-user.target
