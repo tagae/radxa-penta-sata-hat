@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+rm /etc/radxa-penta.env > /dev/null || true
+
+systemctl stop radxa-penta.service
+systemctl disable radxa-penta.service
+
+if [ -d /run/systemd/system ]; then
+  systemctl --system daemon-reload > /dev/null || true
+fi

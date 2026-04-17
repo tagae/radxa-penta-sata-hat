@@ -1,0 +1,11 @@
+Package: radxa-penta
+Version: %%VERSION%%
+Architecture: %%ARCH%%
+Maintainer: Sebastián González Montesinos <tagae@ehub.io>
+Section: utils
+Priority: optional
+Homepage: https://github.com/tagae/radxa-penta
+Depends: console-setup-linux
+Description: Radxa Penta SATA HAT Utility
+ Fan control, OLED display, and button handling for the
+ Radxa Penta SATA HAT on Raspberry Pi.
